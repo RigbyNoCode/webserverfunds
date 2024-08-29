@@ -7,18 +7,25 @@
     <style>
         .top-left-image {
             float: left;
-            width: 250px; /* Adjust the width as needed */
-            margin-right: 10px; /* Space between the image and the text */
+            width: 250px; 
+            margin-right: 10px; 
         }
     </style>
+    <style>
+        .middle-picture {
+            float: center;
+            width: 500px; 
+        }
+    </style>
+
 </head>
 <body>
     <h1> Money Generator (real!!) </h1>
     <h2> Free Download (10000% legit) 🤑🤑🤑🤑</h2>
     <div>
         <img class="top-left-image" src="https://image.freepik.com/free-photo/smiling-young-indian-man-showing-thumbs-up-looking-camera_1262-14426.jpg?w=1380" alt="you after free money">
-        <p>Download my money generator now and start earning free money instantly! This is a 10000% legit offer that you don't want to miss. 🤑🤑🤑</p>
-        <img src="https://hotsigns.net/assets/images/emogee%20247.png" alt="emoji">
+        <p>Download my money generator now and start earning free money instantly! This is a 10000% legit offer that you don't want to miss. 🤑🤑🤑</p> <br> <br> <br> <br> <br> <br> <br>
+        
     </div>
 
     <div>
@@ -30,21 +37,26 @@
         <li> Enter Credit Card information In order to receive free money!!!</li>
         <li>Join a yacht club with the gazillion dollars you made</li>
         </ol>
+        <img class="middle-picture" src="https://hotsigns.net/assets/images/emogee%20247.png" alt="emoji" width: 500px; >
     </div>
 
     <div>
         <h3>Credit Card Information pretty PLEASE!!!!🤭🤭🤭</h3>
         <form>
             <label for="fname"> Full Name:</label> </label><br>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" required><br>
+
             <label for="Cnbr">Credit Card Number:</label><br>
-            <input type="number" id="Cnbr" name="Cnbr"><br>
+            <input type="text" pattern="\d{16}" id="Cnbr"  name="Cnbr" maxlength="16" required><br>
+
             <label for="expire">Expiration date:</label><br>
-    <input type="month" id="expire" name="expire"><br>
-    <label for="cvv">3 funny numbers on the back:</label><br>
-    <input type="number" id="cvv" name="cvv" maxlength="3"><br>
-    <input type="checkbox" id="rights" name="rights">
-    <label for="rights"> I consent to being scammed of my life savings 😉</label><br>
+            <input type="month" id="expire" name="expire" required><br>
+
+            <label for="cvv">3 funny numbers on the back:</label><br>
+            <input type="text" pattern="\d{3}" id="cvv" name="cvv" maxlength="3" required><br>
+
+            <input type="checkbox" id="rights" name="rights" required>
+            <label for="rights"> I consent to being scammed of my life savings 😉</label><br>
     <a href="https://i.kym-cdn.com/photos/images/facebook/002/432/394/1e1.jpg" > Click here for more info </a><br><br>
     <input type="submit" value="Submit">
         </form>
