@@ -2,6 +2,9 @@
 
 <!DOCTYPE html>
 <html>
+    
+
+
 <head>
     <title>Money Generator (Legit)</title>
     <style>
@@ -18,20 +21,49 @@
         }
     </style>
 
+    <script>
+        function blert() {
+            alert("got scammed lol");
+        }
+    
+        function change() {
+            document.getElementById("hello").innerHTML = "<b> Bye World :( <b>";
+        }
+    
+        function hide() {
+    
+            var x = document.getElementById("hidden");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+        }
+    
+    
+        function btnchange(elem) {
+            elem.innerHTML="hello world";
+        }
+
+        function imgchange() {
+        document.getElementById("img1").src = "weed-walking-weed.gif";
+        }
+    </script>
+
 </head>
 <body>
      <a href="https://github.com/RigbyNoCode/webserverfunds" target="_blank"> My Github </a> 
      
     <h1> Money Generator (real!!) </h1>
-    <h2> Free Download (10000% legit) 🤑🤑🤑🤑</h2>
+    <h2> Free Download (10000% legit) &#x1F911; &#x1F911; &#x1F911; &#x1F911;</h2>
     <div>
         <img class="top-left-image" src="https://image.freepik.com/free-photo/smiling-young-indian-man-showing-thumbs-up-looking-camera_1262-14426.jpg?w=1380" alt="you after free money">
-        <p>Download my money generator now and start earning free money instantly! This is a 10000% legit offer that you don't want to miss. 🤑🤑🤑</p> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <p>Download my money generator now and start earning free money instantly! This is a 10000% legit offer that you don't want to miss. &#x1F911; &#x1F911; &#x1F911;</p> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
         
     </div>
 
     <div>
-        <h3>Here's a step by step guide on how to give me free money... I mean get free money 😅😅</h3>
+        <h3>Here's a step by step guide on how to give me free money... I mean get free money &#128517; &#128517;</h3>
         <ol>
         <li>Open this web page</li>    
         <li>Appreciate how beautiful it is</li>
@@ -39,13 +71,13 @@
         <li> Enter Credit Card information In order to receive free money!!!</li>
         <li>Join a yacht club with the gazillion dollars you made</li>
         </ol>
-        <img class="middle-picture" src="https://hotsigns.net/assets/images/emogee%20247.png" alt="emoji" width: 500px; >
+        <img id="img1" class="middle-picture" src="emogee 247.jpg" alt="emoji" width: 500px; >
     </div>
 
-    <div>
-        <h3>Credit Card Information pretty PLEASE!!!!🤭🤭🤭</h3>
+    <div id="hidden">
+        <h3>Credit Card Information pretty PLEASE!!!! &#x1F92D; &#x1F92D; &#x1F92D;</h3>
         <form>
-            <label for="fname"> Full Name:</label> </label><br>
+            <label for="name"> Full Name:</label> </label><br>
             <input type="text" id="name" name="name" required><br>
             
             <label for="age">Enter Age</label> <br>
@@ -61,14 +93,27 @@
             <input type="text" pattern="\d{3}" id="cvv" name="cvv" maxlength="3" required><br>
 
             <input type="checkbox" id="rights" name="rights" required>
-            <label for="rights"> I consent to being scammed of my life savings 😉</label><br>
-            <a href="https://i.kym-cdn.com/photos/images/facebook/002/432/394/1e1.jpg" target="_blank" > Click here for more info </a><br><br>
-            <input type="submit" value="Submit">
+            <label for="rights"> I consent to being scammed of my life savings &#x1F97A; </label><br>
 
-       
+            <a href="1e1.jpg" target="_blank" > Click here for more info </a><br><br>
+            <input type="submit" value="Submit">
+            
+
         </form>
     </div>
+    
+    <button onclick="blert()">hello</button> <br> <br>
 
+    <button onclick="change()">Click to be sad</button> 
+
+    <p id="hello"> <b>Hello World!</b></p>  <br> <br> <br>
+    
+
+    <button onclick="hide()"> click to prevent being scammed</button> <br>
+
+    <button onclick="btnchange(this)"> bye world </button>
+
+    <button onclick="imgchange()">click to change image</button>
 </body>
 </html>
 
