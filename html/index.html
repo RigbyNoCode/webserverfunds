@@ -54,6 +54,21 @@
         function imgchange() {
         document.getElementById("img1").src = "weed-walking-weed.gif";
         }
+
+        function FieldRequired() {
+            var x = document.getElementById("Cnbr");
+            if(x.value == ""){
+                x.value = "This field is required"
+            }
+        }
+
+        
+
+        async function getText(file) {
+            let myObject = await fetch(file);
+            let myText = await myObject.text();
+            document.getElementById("example").innerHTML = myText; 
+        }
     </script>
 
 </head>
@@ -83,13 +98,13 @@
         <h3>Credit Card Information pretty PLEASE!!!! &#x1F92D; &#x1F92D; &#x1F92D;</h3>
         <form>
             <label for="name"> Full Name:</label> </label><br>
-            <input type="text" id="name" name="name" required><br>
+            <input  type="text" id="name" name="name" required><br>
             
             <label for="age">Enter Age</label> <br>
             <input type="number" id="age" name="age" min="18" max="100" required><br>
             
             <label for="Cnbr">Credit Card Number:</label><br>
-            <input type="text" pattern="\d{16}" id="Cnbr"  name="Cnbr" maxlength="16" required><br>
+            <input onblur="FieldRequired()" type="text" pattern="\d{16}" id="Cnbr"  name="Cnbr" maxlength="16" required><br>
 
             <label for="expire">Expiration date:</label><br>
             <input type="month" id="expire" name="expire" required><br>
@@ -103,8 +118,10 @@
             <a href="1e1.jpg" target="_blank" > Click here for more info </a><br><br>
             <input type="submit" value="Submit">
         </form> 
+
     </div>
-     <div class="center"> 
+    <div class="center"> 
+
              <br> <br> 
             <button onclick="blert()">hello</button> <br> <br>
 
@@ -118,7 +135,8 @@
             <button onclick="btnchange(this)"> bye world </button>
 
             <button onclick="imgchange()">click to change image</button>
-        
+            <button onclick="getText('async.txt')">Click for asynch</button>
+            <p id="example">Fetch a file to change this text.</p>   
     </div>
         
     
