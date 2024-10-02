@@ -11,7 +11,7 @@
         <p> Your Card Number: <?= htmlspecialchars ($_POST['Cnbr']) ?></p>
         <p> Expiration: <?= htmlspecialchars ($_POST['expire']) ?></p>
         <P> CVV: <?= htmlspecialchars ($_POST['cvv']) ?></p>
-        <p> your consent <?= htmlspecialchars ($_POST['rights']) ?></p>
+        <p> Your consent: <?= htmlspecialchars ($_POST['rights']) ?></p>
     </body> 
 </head>
 </html>
