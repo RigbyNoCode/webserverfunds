@@ -4,8 +4,7 @@
 <head>
     <title> Form Respnse </title>
     <body>
-        <p>GET: <?= var_dump($_GET) ?></p>
-        <p>POST: <?= var_dump($_POST) ?></p>
+
 
         <p> Your Name is: <?= htmlspecialchars ($_POST['name']) ?></p>
         <p> Your Age is: <?= htmlspecialchars ($_POST['age']) ?></p>
