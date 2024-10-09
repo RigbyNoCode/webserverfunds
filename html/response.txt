@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title> Form Respnse </title>
+    <body>
+
+
+        <p> Your Name is: John Pork</p>
+        <p> Your Age is: </p>
+        <p> Your Card Number: </p>
+        <p> Expiration: </p>
+        <P> CVV: </p>
+        <p> Your consent: </p>
+    </body> 
+</head>
+</html>
