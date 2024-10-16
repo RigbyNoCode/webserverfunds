@@ -2,7 +2,7 @@
 <html>
     
 <head>
-    <title> Form Respnse </title>
+    <title> Form Response </title>
     <body>
     <?php
         $server = "localhost";
@@ -30,7 +30,7 @@
             echo "CVV: {$row['cvv']}<br>";
         }
         $sql = "INSERT INTO user_data (user_name, age, card_number, card_expiration, cvv)
-VALUES ($_POST['name'], $_POST['age'], $_POST['Cnbr'], $_POST['expire'], $_POST['cvv'])   );";
+VALUES ($_POST['name'], $_POST['age'], $_POST['Cnbr'], $_POST['expire'], $_POST['cvv']);";
 
 mysqli_close($conn);
 ?>
