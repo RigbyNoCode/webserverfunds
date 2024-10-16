@@ -5,7 +5,7 @@
     <title> Form Respnse </title>
     <body>
     <?php
-        $servername = "localhost"
+        $server = "localhost"
         $username = "bogdan"
         $password = "voidnul0";
         $database = "storage";
@@ -18,7 +18,7 @@
         
         $sql = "select * from user_data;"; 
         $sql = "INSERT INTO user_data (user_name, age, card_number, card_expiration, cvv)
-VALUES ($_POST['name'], $_POST['age'], $_POST['Cnbr'] $_POST['expire'], $_POST['cvv'])   );";
+VALUES ($_POST['name'], $_POST['age'], $_POST['Cnbr'], $_POST['expire'], $_POST['cvv'])   );";
 
 mysqli_close($conn);
 ?>
