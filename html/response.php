@@ -12,13 +12,13 @@
     $database = "storage";
 
     $conn = mysqli_connect($server, $username, $password, $database);
-    // Check connection
+
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
     echo "Connected successfully<br>";
 
-    // Select and display data
+
     $sql = "SELECT * FROM user_data;";
     $result = mysqli_query($conn, $sql);
     echo "Number of records: " . mysqli_num_rows($result) . "<br>";
