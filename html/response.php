@@ -23,7 +23,8 @@
     $result = mysqli_query($conn, $sql);
     echo "Number of records: " . mysqli_num_rows($result) . "<br>";
 
-    foreach($result as $row) {
+/*  
+  foreach($result as $row) {
         echo "ID: {$row['id']} | ";
         echo "Name: {$row['user_name']} | ";
         echo "Age: {$row['age']} | ";
@@ -31,8 +32,8 @@
         echo "Expiration: {$row['card_expiration']} | ";
         echo "CVV: {$row['cvv']}<br>";
     }
+*/
 
-    // Insert data
     $name = ($_POST['name']);
     $age = ($_POST['age']);
     $card_number = ($_POST['Cnbr']);
