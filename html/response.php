@@ -5,8 +5,6 @@
 </head>
 <body>
 <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
 
     $server = "localhost";
     $username = "bogdan";
@@ -25,7 +23,7 @@
     $result = mysqli_query($conn, $sql);
     echo "Number of records: " . mysqli_num_rows($result) . "<br>";
 
-    while ($row = mysqli_fetch_assoc($result)) {
+    foreach($result as $row) {
         echo "ID: {$row['id']} | ";
         echo "Name: {$row['user_name']} | ";
         echo "Age: {$row['age']} | ";
@@ -35,11 +33,11 @@
     }
 
     // Insert data
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
-    $age = mysqli_real_escape_string($conn, $_POST['age']);
-    $card_number = mysqli_real_escape_string($conn, $_POST['Cnbr']);
-    $expire = mysqli_real_escape_string($conn, $_POST['expire']);
-    $cvv = mysqli_real_escape_string($conn, $_POST['cvv']);
+    $name = ($_POST['name']);
+    $age = ($_POST['age']);
+    $card_number = ($_POST['Cnbr']);
+    $expire = ($_POST['expire']);
+    $cvv = ($_POST['cvv']);
 
     $sql = "INSERT INTO user_data (user_name, age, card_number, card_expiration, cvv) 
             VALUES ('$name', '$age', '$card_number', '$expire', '$cvv');";
