@@ -62,12 +62,14 @@
             }
         }
 
-        
-
         async function getText(file) {
             let myObject = await fetch(file);
             let myText = await myObject.text();
             document.getElementById("example").innerHTML = myText; 
+        }
+
+        function redirect() {
+          location.href="tables.html"
         }
     </script>
 
@@ -119,7 +121,8 @@
             <input type="submit" value="Submit">
         </form> 
 
-    </div>
+<!-- Buttons things -->
+    </div>                  
     <div class="center"> 
 
              <br> <br> 
@@ -138,7 +141,14 @@
             <button onclick="getText('async.txt')">Click for asynch</button>
             <p id="example">Fetch a file to change this text.</p>   
     </div>
-        
+    
+
+    <!-- Redirect to website pulling options from db -->
+    <div class="center"> 
+    
+        <button onclick="redirect()">Search database</button>
+    
+    </div>
     
 
 </body>
