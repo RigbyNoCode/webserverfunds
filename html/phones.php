@@ -24,7 +24,7 @@
     {
         if ($row["brand"] == $brand) 
         {
-            echo "{$row['brand']} newest phone is the {$row['model']}, it features the {$row['cpu']} chipset.";
+            echo "{$row['brand']}'s newest phone is the {$row['model']}, it features the {$row['cpu']} chipset.";
         }
     }
 

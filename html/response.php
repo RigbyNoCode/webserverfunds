@@ -21,19 +21,9 @@
 
     $sql = "SELECT * FROM user_data;";
     $result = mysqli_query($conn, $sql);
-    echo "Number of records: " . mysqli_num_rows($result) . "<br>";
-
-/*  
-  foreach($result as $row) {
-        echo "ID: {$row['id']} | ";
-        echo "Name: {$row['user_name']} | ";
-        echo "Age: {$row['age']} | ";
-        echo "Card Number: {$row['card_number']} | ";
-        echo "Expiration: {$row['card_expiration']} | ";
-        echo "CVV: {$row['cvv']}<br>";
-    }
-*/
-
+    
+    
+    // This assigns data from the forms
     $name = ($_POST['name']);
     $age = ($_POST['age']);
     $card_number = ($_POST['Cnbr']);
