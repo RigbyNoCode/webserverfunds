@@ -11,7 +11,7 @@
     $username = "bogdan";
     $password = "voidnul0";
     $database = "storage";
-    $brand = ($GET["brand"]);
+    $brand = ($_GET["brand"]);
     $conn = mysqli_connect($server, $username, $password, $database);
 
     if (!$conn) {
@@ -24,7 +24,7 @@
     {
         if ($row["brand"] == $brand) 
         {
-            echo "{$row['brand']} newest phone is the {$row['model']}, it features the {$row[cpu]} chipset.";
+            echo "{$row['brand']} newest phone is the {$row['model']}, it features the {$row['cpu']} chipset.";
         }
     }
 
