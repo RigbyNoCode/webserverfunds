@@ -26,7 +26,10 @@
         {
             echo "{$row['brand']}'s newest phone is the {$row['model']}, it features the {$row['cpu']} chipset.";
         }
-    }
+        else 
+        {
+            echo "Sorry your entry is invalid, please try again."
+        }
 
     mysqli_close($conn);
 ?>
