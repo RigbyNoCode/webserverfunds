@@ -28,7 +28,7 @@
         }
         else 
         {
-            echo "Sorry your entry is invalid, please try again."
+            echo "Sorry your entry is invalid, please try again.";
         }
     }
     mysqli_close($conn);
