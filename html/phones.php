@@ -28,6 +28,7 @@
             $found = true;
             break;
         }
+    }
         if (!$found) {
             echo "Sorry, your entry is invalid, please try again.";
         } 
@@ -35,6 +36,6 @@
         {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
-    }
+    
     mysqli_close($conn);
 ?>
