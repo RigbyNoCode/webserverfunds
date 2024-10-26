@@ -25,10 +25,15 @@
         if ($row["brand"] == $brand) 
         {
             echo "{$row['brand']}'s newest phone is the {$row['model']}, it features the {$row['cpu']} chipset.";
+            $found = true;
+            break;
         }
+        if (!$found) {
+            echo "Sorry, your entry is invalid, please try again.";
+        } 
         else 
         {
-            echo "Sorry your entry is invalid, please try again.";
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
     }
     mysqli_close($conn);
