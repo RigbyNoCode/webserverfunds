@@ -11,7 +11,7 @@
     $username = "bogdan";
     $password = "voidnul0";
     $database = "storage";
-    $brand = htmlspecialchars($_GET["brand"]);
+    $brand = ($GET["brand"]);
     $conn = mysqli_connect($server, $username, $password, $database);
 
     if (!$conn) {
