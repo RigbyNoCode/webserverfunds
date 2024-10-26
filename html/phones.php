@@ -31,7 +31,7 @@
     }
         if (!$found) 
         {
-            echo "Sorry, your entry is invalid, please try again. /n";
+            echo "Sorry, your entry is invalid, please try again.<br>";
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
         
