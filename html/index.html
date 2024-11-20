@@ -78,6 +78,13 @@
             let myText = await myObject.text();
             document.getElementById("hola").innerHTML = myText; 
         }
+
+        async function sensor() {
+            let myObject = await fetch("button.php");
+            let myText = await myObject.text();
+            document.getElementById("salut").innerHTML = myText; 
+        }
+        
         
     </script>
 
@@ -158,7 +165,14 @@
 
         <button onclick="toggle();">Toggle</button>
         <p id="hola"> LED STATUS</p>
+
+
+        <button onclick="sensor();">Sensor Data</button>
+        <p id="salut"> Readings</p>
+
     </div>
+
+
 
   
 
