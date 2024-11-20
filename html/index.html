@@ -68,8 +68,15 @@
             document.getElementById("example").innerHTML = myText; 
         }
 
+     
         function redirect() {
           location.href="tables.html"
+        }
+
+        async function toggle() {
+           let myObject = await fetch(button.php)
+           let myText = await myObject.text();
+           document.getElementById("hola").innerHTML = "toggled success"; 
         }
     </script>
 
@@ -147,9 +154,14 @@
     <div class="center"> 
     
         <button onclick="redirect()">Search database</button>
-    
+
+        <!-- lab 11 -->
+        <button onclick="toggle();">Toggle</button>
     </div>
     
+    
+ 
+
 
 </body>
 </html>
