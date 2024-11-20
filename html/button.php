@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php
-$output = shell_exec("gpio toggle 0")
+$output = shell_exec("gpio toggle 0");
 
 if ($output !== null) {
     echo "LED toggled successfully!";
