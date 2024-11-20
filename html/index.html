@@ -80,7 +80,7 @@
         }
 
         async function sensor() {
-            let myObject = await fetch("button.php");
+            let myObject = await fetch("sensor.php");
             let myText = await myObject.text();
             document.getElementById("salut").innerHTML = myText; 
         }
