@@ -75,6 +75,8 @@
 
          async function toggle() {
             let myObject = await fetch("button.php");
+            let myText = await myObject.text();
+            document.getElementById("hola").innerHTML = myText; 
         }
         
     </script>
@@ -153,12 +155,15 @@
     <div class="center"> 
     
         <button onclick="redirect()">Search database</button> 
+
+        <button onclick="toggle();">Toggle</button>
+        <p id="hola"> LED STATUS</p>
     </div>
 
   
 
-     <button onclick="toggle();">Toggle</button>
- 
+     
+    
 
 
 </body>
