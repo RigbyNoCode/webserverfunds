@@ -73,6 +73,9 @@
           location.href="tables.html"
         }
 
+         async function toggle() {
+            let myObject = await fetch("button.php");
+        }
         
     </script>
 
@@ -151,11 +154,8 @@
     
         <button onclick="redirect()">Search database</button> 
     </div>
-    <script>
-    async function toggle() {
-        let myObject = await fetch(button.php)
-     }
-    </script>
+
+  
 
      <button onclick="toggle();">Toggle</button>
  
