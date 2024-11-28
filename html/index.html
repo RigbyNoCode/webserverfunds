@@ -76,13 +76,13 @@
          async function toggle() {
             let myObject = await fetch("button.php");
             let myText = await myObject.text();
-            document.getElementById("hola").innerHTML = myText; 
+            document.getElementById("led").innerHTML = myText; 
         }
 
         async function sensor() {
             let myObject = await fetch("sensor.php");
             let myText = await myObject.text();
-            document.getElementById("salut").innerHTML = myText; 
+            document.getElementById("sensor").innerHTML = myText; 
         }
         
         
@@ -164,11 +164,11 @@
         <button onclick="redirect()">Search database</button> 
 
         <button onclick="toggle();">Toggle</button>
-        <p id="hola"> LED STATUS</p>
+        <p id="led"> LED STATUS</p>
 
 
         <button onclick="sensor();">Sensor Data</button>
-        <p id="salut"> Readings</p>
+        <p id="sensor"> Readings</p>
 
     </div>
 
